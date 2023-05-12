@@ -1,3 +1,8 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
 .header {
     height: 449px;
     background-color: #000;
@@ -28,12 +33,6 @@
     z-index: -1;
 }
 
-.body {
-    outline-offset: 0px;
-    background-color: #fff;
-    border: 1px #000;
-    outline: 3px #333;
-}
 
 .header-title {
     max-width: 1200px;
