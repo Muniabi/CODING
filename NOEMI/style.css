@@ -1,20 +1,31 @@
 .header {
     height: 449px;
-    opacity: 1;
-    -webkit-text-fill-color: inherit;
     background-color: #000;
-    background-image: url('../images/Color-mask.png'), url('../images/banner-bg.jpg');
-    background-position: 0 0, 50%;
-    background-repeat: repeat, no-repeat;
-    background-size: cover, auto;
-    background-attachment: scroll, scroll;
+    background-image: url('https://netology-code.github.io/html-2-diploma/sources/images/banner-bg.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
     background-clip: border-box;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
     padding-top: 28px;
     display: block;
-    overflow: visible;
+
+    position: relative;
+    z-index: 0;
+}
+
+.header:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color: #000;
+    opacity: 0.45;
+    z-index: -1;
 }
 
 .body {
