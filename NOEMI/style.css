@@ -1,27 +1,29 @@
 body {
-    margin: 0;
-    padding: 0;
+    margin: 0 auto;
+    padding: 0 auto;
+    background-color: white;
+    font-family: Open Sans, sans-serif;
 }
 
-.header {
+
+/* Блок заголовка */
+header {
     height: 449px;
     background-color: #000;
     background-image: url('https://netology-code.github.io/html-2-diploma/sources/images/banner-bg.jpg');
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
-    background-clip: border-box;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
     padding-top: 28px;
     display: block;
-
     position: relative;
     z-index: 0;
 }
 
-.header:after {
+header:after {
     content: "";
     position: absolute;
     top: 0;
@@ -34,116 +36,71 @@ body {
 }
 
 
+
 .header-title {
-    max-width: 1200px;
+    display: flex;
     justify-content: flex-start;
     align-items: flex-start;
-    margin-left: auto;
-    margin-right: auto;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.header-text {
+    color: #fff;
     display: block;
+    font-size: 45px;
+    font-weight: 700;
+    justify-content: center;
+    line-height: 75px;
+    margin: 70px auto 0;
+    max-height: 380px;
+    max-width: 680px;
+    text-align: center;
 }
 
 .logo {
     height: 40px;
     margin-left: 15px;
-    margin-right: auto;
     display: inline-block;
 }
 
-.list {
-    max-width: 1000px;
-    flex-wrap: nowrap;
-    justify-content: flex-end;
-    align-items: flex-start;
-    margin-top: -54px;
-    margin-left: 214px;
-    margin-right: 0;
-    list-style-type: none;
-    display: flex;
-}
 
-.header-text {
-    max-height: 380px;
-    max-width: 680px;
-    color: #fff;
-    text-align: center;
-    flex-flow: row;
-    justify-content: center;
-    align-items: center;
-    margin-top: 70px;
-    margin-left: auto;
-    margin-right: auto;
-    padding-right: 0;
-    font-family: Open Sans, sans-serif;
-    font-size: 45px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 75px;
-    display: block;
-    position: static;
-    overflow: visible;
-}
-
-.main {
+/* Блок главной */
+main {
     max-width: 1200px;
+    display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: flex-start;
-    margin-top: 64px;
-    margin-left: auto;
-    margin-right: auto;
-    display: flex;
+    margin: 64px auto 0;
 }
 
-.image-2 {
-    max-width: 100%;
-    margin-right: 0;
-    padding-left: 0;
-}
 
+/* Блок карточек */
 .card {
-    flex-flow: row;
-    align-content: stretch;
-    justify-content: flex-start;
-    align-items: flex-start;
-    margin-bottom: 60px;
     display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: flex-start;
+    margin-bottom: 60px;
 }
 
 .card-tags {
     color: #b59f5b;
     text-align: left;
     text-transform: uppercase;
-    flex-direction: row;
-    justify-content: flex-start;
-    align-items: flex-start;
-    font-family: Open Sans, sans-serif;
     font-weight: 700;
     line-height: 20px;
-    display: block;
 }
 
 .card-title {
-    direction: ltr;
     text-transform: uppercase;
-    flex: 0 auto;
     justify-content: flex-start;
     align-items: flex-start;
     margin-top: 16px;
     margin-bottom: 20px;
-    font-family: Open Sans, sans-serif;
     font-size: 20px;
     font-weight: 700;
-    display: block;
-    position: static;
-}
-
-.card-text {
-    max-width: 367px;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: flex-start;
-    margin-left: 30px;
     display: block;
 }
 
@@ -151,44 +108,31 @@ body {
     color: #888;
     text-align: left;
     object-fit: fill;
-    font-family: Open Sans, sans-serif;
     font-size: 12px;
     font-weight: 400;
     line-height: 40px;
     display: inline-block;
-    overflow: visible;
 }
 
 .card-author {
-    color: #000;
-    justify-content: flex-end;
+    display: inline-block;
     align-items: center;
     margin-left: 12px;
-    font-family: Open Sans, sans-serif;
+    line-height: 40px;
     font-size: 12px;
     font-weight: 700;
-    line-height: 40px;
-    display: inline-block;
+    text-align: right;
+    color: #000;
 }
 
-.text {
-    color: #0f0d0e;
-    margin-top: 40px;
-    margin-bottom: 0;
-    font-family: Open Sans, sans-serif;
-    font-size: 15px;
-    font-weight: 400;
-    line-height: 22px;
+.card-text {
+    max-width: 367px;
+    flex-direction: column;
+    margin-left: 30px;
 }
 
-.text-2 {
-    color: #0f0d0e;
-    font-family: Open Sans, sans-serif;
-    font-size: 15px;
-    font-weight: 400;
-    line-height: 22px;
-}
 
+/* Блок новостей */
 .news {
     max-width: 794px;
     margin-left: 15px;
@@ -196,176 +140,90 @@ body {
 
 .aside {
     max-width: 272px;
-    margin-left: 0;
     margin-right: 15px;
 }
 
-.footer {
-    max-width: 1200px;
-    margin-top: 64px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.copyright {
-    color: #999;
-    text-align: center;
-    font-family: Open Sans, sans-serif;
-    line-height: 40px;
-}
-
-.footer-text {
-    max-width: 1170px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.contact {
-    max-width: 1170px;
-    background-color: #f4f7f6;
-    margin: auto;
-    font-family: Open Sans, sans-serif;
-}
-
-.text-block {
+.new-posts-title {
     text-align: center;
     text-transform: uppercase;
-    font-family: Open Sans, sans-serif;
     font-weight: 700;
     line-height: 29.15px;
-}
-
-.utility-page-wrap {
-    width: 100vw;
-    height: 100vh;
-    max-height: 100%;
-    max-width: 100%;
-    justify-content: center;
-    align-items: center;
-    display: flex;
-}
-
-.utility-page-content {
-    width: 260px;
-    text-align: center;
-    flex-direction: column;
-    display: flex;
-}
-
-.utility-page-form {
-    flex-direction: column;
-    align-items: stretch;
-    display: flex;
 }
 
 .new-posts-line {
     width: 66px;
     height: 3px;
     background-color: #e1d9bd;
-    margin-top: 6px;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 6px auto 0;
 }
 
 .new-post-card {
+    display: flex;
     flex-direction: row;
     justify-content: flex-start;
     align-items: flex-start;
     margin-top: 22px;
-    display: flex;
 }
 
 .new-posts-info {
     margin-left: 20px;
 }
 
-.new-post-card-title {
-    color: #888;
-    font-family: Open Sans, sans-serif;
-    font-size: 12px;
-    font-weight: 400;
-    line-height: 16px;
-}
-
 .new-post-card-text {
     color: #000;
-    text-transform: uppercase;
-    margin-top: 5px;
-    font-family: Open Sans, sans-serif;
     font-weight: 700;
+    line-height: 16px;
+    margin-top: 5px;
+    text-transform: uppercase;
+}
+
+.new-post-card-title {
+    color: #888;
+    font-size: 12px;
     line-height: 16px;
 }
 
-.new-post-card-img {
-    width: 70px;
-    height: 70px;
-    max-height: 133%;
-}
 
-.div-block {
+/* Блок поиска */
+.search {
     margin-top: 60px;
+    justify-content: flex-start;
+    align-items: flex-start;
+    display: flex;
 }
 
 .search-button {
     width: 48px;
     height: 48px;
-    -webkit-text-fill-color: inherit;
     background-color: #b59f5b;
-    background-image: url('../images/search.svg');
+    background-image: url('https://netology-code.github.io/html-2-diploma/sources/images/search.svg');
     background-position: 50%;
     background-repeat: no-repeat;
-    background-size: 18px 18px;
-    background-attachment: scroll;
-    background-clip: border-box;
-    border: 1px #000;
-    padding-top: 0;
-    padding-bottom: 0;
-}
-
-.search {
-    justify-content: flex-start;
-    align-items: flex-start;
-    margin-bottom: 0;
-    margin-left: auto;
-    margin-right: auto;
-    display: flex;
+    background-size: 50%;
+    border: none;
 }
 
 .search-input {
+    width: 100%;
+    max-width: 272px;
+    font-size: 13px;
+    padding-left: 18px;
+    width: 100%;
     height: 48px;
     color: #939594;
     background-color: #f4f7f6;
-    border: 1px #000;
-    margin-bottom: 0;
-    padding-top: 0;
-    padding-bottom: 0;
-    font-family: Open Sans, sans-serif;
+    border: none;
 }
 
+
+/* Блок подписки */
 .send {
     margin-top: 62px;
-}
-
-.submit-button {
-    width: 100%;
-    text-align: center;
-    text-transform: uppercase;
-    background-color: #b59f5b;
-    font-family: Open Sans, sans-serif;
-    font-weight: 700;
-}
-
-.text-field {
-    color: #939594;
-    margin: 23px 0 18px;
-    font-family: Open Sans, sans-serif;
-    font-size: 13px;
 }
 
 .send-text {
     text-align: center;
     text-transform: uppercase;
-    font-family: Open Sans, sans-serif;
     font-weight: 700;
     line-height: 29.15px;
 }
@@ -374,56 +232,60 @@ body {
     width: 66px;
     height: 3px;
     background-color: #e1d9bd;
-    margin-top: 6px;
-    margin-left: auto;
-    margin-right: auto;
-    padding-top: 0;
+    margin: 6px auto 0;
 }
 
 .send-form {
     margin-top: 23px;
 }
 
-.text-field-2 {
-    color: #000;
-    margin-bottom: 0;
-    font-family: Open Sans, sans-serif;
-    font-size: 13px;
-    font-weight: 400;
-}
-
-.submit-button-2 {
+.send-input {
     width: 100%;
-    color: #fff;
-    text-transform: uppercase;
-    background-color: #b59f5b;
-    margin-top: 18px;
-    font-family: Open Sans, sans-serif;
-    font-weight: 700;
-    line-height: 20px;
+    font-size: 13px;
+    width: 100%;
+    height: 48px;
+    color: #939594;
+    background-color: #f4f7f6;
+    border: none;
 }
 
+.send-input placeholder {
+    padding-left: 18px;
+
+}
+
+.btn-submit {
+    width: 100%;
+    height: 40px;
+    background-color: #b59f5b;
+    color: #fff;
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 30px;
+    margin-top: 18px;
+    border: none;
+}
+
+
+/* Блок тегов */
 .tags {
     margin-top: 60px;
 }
 
-.text-block-2 {
+.tags-text {
     color: #0f0d0e;
     text-align: center;
     text-transform: uppercase;
-    font-family: Open Sans, sans-serif;
     font-weight: 700;
     line-height: 29.15px;
 }
 
-.div-block-2 {
+.tags-line {
     width: 66px;
     height: 3px;
     color: #fff;
     background-color: #e1d9bf;
-    margin-top: 6px;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 6px auto 0;
 }
 
 .tags-select {
@@ -432,9 +294,12 @@ body {
     align-items: flex-start;
     margin-top: 24px;
     display: block;
+    line-height: 30px;
+
 }
 
 .button-tag {
+    text-decoration: none;
     width: 80px;
     height: 24px;
     color: #42393e;
@@ -442,16 +307,13 @@ body {
     text-transform: uppercase;
     background-color: #fff;
     border: 3px solid #eee;
-    margin-bottom: 6px;
-    margin-left: auto;
-    margin-right: 6px;
-    padding: 0;
-    font-family: Open Sans, sans-serif;
     font-size: 12px;
     font-weight: 700;
+    padding: 2px 8px 2px 8px;
 }
 
 .button-select {
+    text-decoration: none;
     width: 80px;
     height: 24px;
     color: #0f0d0e;
@@ -459,14 +321,13 @@ body {
     text-transform: uppercase;
     background-color: #fff;
     border: 3px solid #eee;
-    margin-bottom: 6px;
-    margin-right: 6px;
-    padding: 0;
-    font-family: Open Sans, sans-serif;
     font-size: 12px;
     font-weight: 700;
+    padding: 2px 8px 2px 8px;
 }
 
+
+/* Блок тем */
 .themes {
     margin-top: 60px;
 }
@@ -475,9 +336,6 @@ body {
     color: #0f0d0e;
     text-align: center;
     text-transform: uppercase;
-    margin-left: 0;
-    margin-right: 0;
-    font-family: Open Sans, sans-serif;
     font-weight: 700;
     line-height: 29.15px;
 }
@@ -486,9 +344,8 @@ body {
     width: 66px;
     height: 3px;
     background-color: #e1d9c0;
-    margin-top: 6px;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 6px auto 0;
+    ;
 }
 
 .themes-select {
@@ -499,16 +356,13 @@ body {
 
 .themes-select-text {
     border: 1px #000;
-    font-family: Open Sans, sans-serif;
     font-weight: 700;
     line-height: 47px;
 }
 
 .themes-select-number {
     color: #b59f5b;
-    margin-left: 0;
     padding-left: 5px;
-    font-family: Open Sans, sans-serif;
     font-size: 12px;
     font-weight: 700;
     line-height: 36.82px;
@@ -518,4 +372,39 @@ body {
     border-bottom: 1px solid #eee;
     align-items: flex-start;
     display: flex;
+}
+
+
+/* Блок футера */
+footer {
+    max-width: 1200px;
+    margin: 64px auto 0 auto;
+}
+
+.contact {
+    height: 83px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 1170px;
+    background-color: #f4f7f6;
+    margin: 0 auto;
+}
+
+.contact img {
+    margin-right: 15px;
+    margin-left: 15px;
+    width: 20px;
+    height: 20px;
+}
+
+.footer-text {
+    text-align: center;
+    max-width: 1170px;
+    margin: 0 auto;
+}
+
+.copyright {
+    color: #999;
+    line-height: 40px;
 }
