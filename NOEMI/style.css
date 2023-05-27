@@ -1,6 +1,6 @@
 body {
     margin: 0 auto;
-    padding: 0 auto;
+    padding: 0;
     background-color: white;
     font-family: Open Sans, sans-serif;
 }
@@ -147,7 +147,6 @@ main {
     text-align: center;
     text-transform: uppercase;
     font-weight: 700;
-    line-height: 29.15px;
 }
 
 .new-posts-line {
@@ -240,6 +239,8 @@ main {
 }
 
 .send-input {
+    box-sizing: border-box;
+    padding-left: 20px;
     width: 100%;
     font-size: 13px;
     width: 100%;
