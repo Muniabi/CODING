@@ -423,7 +423,7 @@ header:after {
 }
 
 .tags-select li {
-    b59f5 margin: 0 3px 3px 0;
+    margin: 0 3px 3px 0;
     list-style: none;
 
 }
@@ -516,6 +516,7 @@ header:after {
 
 .themes-select-card li:hover {
     color: #b59f5b;
+    transition: .2s;
 }
 
 
