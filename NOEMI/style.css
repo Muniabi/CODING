@@ -12,6 +12,7 @@ body {
 
 
 .container {
+    padding: 0 15px;
     max-width: 1200px;
     width: 100%;
     margin: 0 auto;
@@ -110,13 +111,14 @@ header:after {
 
 
 /* Блок главной */
-main {
+.section {
     max-width: 1200px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: flex-start;
     margin: 64px auto 0;
+    padding: 0 15px;
 }
 
 
@@ -189,12 +191,11 @@ main {
 /* Блок новостей */
 .main {
     max-width: 794px;
-    margin-left: 15px;
 }
 
 .aside {
     max-width: 272px;
-    margin-right: 15px;
+
 }
 
 .new-posts-title {
