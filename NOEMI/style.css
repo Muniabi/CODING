@@ -102,11 +102,31 @@ header:after {
     display: inline-block;
     vertical-align: top;
     margin-right: 20px;
+    position: relative;
+}
+
+.nav-link::after {
+    content: "";
+    height: 1px;
+    width: 100%;
+    top: 100%;
+    left: 0;
+    display: none;
+    position: absolute;
+    z-index: 1;
+    background-color: #fff;
+}
+
+
+.nav-link:hover::after {
+    display: block;
 }
 
 .nav-link:last-child {
     margin-right: 0;
 }
+
+
 
 
 
@@ -149,7 +169,25 @@ header:after {
 .card-tags ul li a {
     text-decoration: none;
     color: #b59f5b;
+    position: relative;
 }
+
+.card-tags ul li a::after {
+    content: "";
+    height: 2px;
+    width: 100%;
+    top: 100%;
+    left: 0;
+    display: none;
+    position: absolute;
+    z-index: 1;
+    background-color: #b59f5b;
+}
+
+.card-tags ul li a:hover:after {
+    display: block;
+}
+
 
 .card-title a {
     text-transform: uppercase;
@@ -162,6 +200,10 @@ header:after {
     display: block;
     text-decoration: none;
     color: #000;
+}
+
+.card-title a:hover {
+    color: #b59f5b;
 }
 
 .card-date {
@@ -229,6 +271,10 @@ header:after {
     color: black;
 }
 
+.new-post-card-text a:hover {
+    color: #b59f5b;
+}
+
 .new-posts-info {
     margin-left: 20px;
 }
@@ -264,17 +310,21 @@ header:after {
     height: 48px;
     background-color: #b59f5b;
     background-image: url('https://netology-code.github.io/html-2-diploma/sources/images/search.svg');
-    background-position: 50%;
+    background-position: center center;
     background-repeat: no-repeat;
     background-size: 50%;
     border: none;
+}
+
+.search-button:hover {
+    background-color: #323232;
 }
 
 .search-input {
     max-width: 272px;
     font-size: 13px;
     padding-left: 18px;
-    padding-right: 70px;
+    padding-right: 40px;
     height: 48px;
     color: #939594;
     background-color: #f4f7f6;
@@ -336,6 +386,10 @@ header:after {
     border: none;
 }
 
+.btn-submit:hover {
+    background-color: #323232;
+}
+
 
 /* Блок тегов */
 .tags {
@@ -369,7 +423,7 @@ header:after {
 }
 
 .tags-select li {
-    margin: 0 3px 3px 0;
+    b59f5 margin: 0 3px 3px 0;
     list-style: none;
 
 }
@@ -392,6 +446,9 @@ header:after {
     padding: 2px 8px 2px 8px;
 }
 
+.button-tag:hover {
+    border: 3px solid #b59f5b;
+}
 
 /* Блок тем */
 .themes {
@@ -455,6 +512,10 @@ header:after {
     display: flex;
     padding: 10px 0;
     border-bottom: 1px solid #eee;
+}
+
+.themes-select-card li:hover {
+    color: #b59f5b;
 }
 
 
