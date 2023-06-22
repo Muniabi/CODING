@@ -1,0 +1,30 @@
+h2 {
+    color: pink;
+    text-align: center;
+}
+
+h1 {
+    text-align: center;
+}
+
+span {
+    color: green;
+    font-weight: 900;
+}
+
+p {
+    text-indent: 30px;
+}
+
+.podr {
+    text-align: right;
+}
+
+a {
+    text-decoration: none;
+    color: pink;
+}
+
+.abv {
+    border: 2px solid black;
+}

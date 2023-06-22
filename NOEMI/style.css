@@ -1,26 +1,45 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
 body {
     margin: 0 auto;
-    padding: 0 auto;
+    padding: 0;
     background-color: white;
     font-family: Open Sans, sans-serif;
 }
 
 
+.container {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    border: 0;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
 /* Блок заголовка */
 header {
-    height: 449px;
     background-color: #000;
     background-image: url('https://netology-code.github.io/html-2-diploma/sources/images/banner-bg.jpg');
     background-position: center center;
     background-repeat: no-repeat;
-    background-size: cover;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
+    background-size: 100%;
     padding-top: 28px;
     display: block;
     position: relative;
     z-index: 0;
+    padding-bottom: 70px;
 }
 
 header:after {
@@ -31,38 +50,63 @@ header:after {
     left: 0;
     bottom: 0;
     background-color: #000;
-    opacity: 0.45;
+    opacity: 0.50;
     z-index: -1;
 }
 
+.header {
+    width: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
 
-
-.header-title {
-    display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
-    max-width: 1200px;
-    margin: 0 auto;
 }
 
 .header-text {
     color: #fff;
     display: block;
-    font-size: 45px;
+    font-size: 35px;
     font-weight: 700;
-    justify-content: center;
     line-height: 75px;
     margin: 70px auto 0;
-    max-height: 380px;
+    height: 100%;
+    width: 100%;
     max-width: 680px;
     text-align: center;
 }
 
-.logo {
-    height: 40px;
-    margin-left: 15px;
+.header-logo {
+    cursor: pointer;
+    width: 176px;
     display: inline-block;
 }
+
+.header-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+/* Nav*/
+.nav {
+    text-transform: uppercase;
+    font-size: 15px;
+}
+
+.nav-link {
+    color: #fff;
+    text-decoration: none;
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 20px;
+}
+
+.nav-link:last-child {
+    margin-right: 0;
+}
+
 
 
 /* Блок главной */
@@ -79,21 +123,33 @@ main {
 /* Блок карточек */
 .card {
     display: flex;
-    flex-wrap: wrap;
-    align-items: flex-start;
-    justify-content: flex-start;
     margin-bottom: 60px;
 }
 
-.card-tags {
-    color: #b59f5b;
-    text-align: left;
-    text-transform: uppercase;
-    font-weight: 700;
-    line-height: 20px;
+.card img {
+    height: 100%;
 }
 
-.card-title {
+.card-tags {
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.card-tags ul li {
+    display: inline;
+    list-style: none;
+}
+
+.card-tags ul li:first-child {
+    margin-right: 10px;
+}
+
+.card-tags ul li a {
+    text-decoration: none;
+    color: #b59f5b;
+}
+
+.card-title a {
     text-transform: uppercase;
     justify-content: flex-start;
     align-items: flex-start;
@@ -102,6 +158,8 @@ main {
     font-size: 20px;
     font-weight: 700;
     display: block;
+    text-decoration: none;
+    color: #000;
 }
 
 .card-date {
@@ -110,7 +168,6 @@ main {
     object-fit: fill;
     font-size: 12px;
     font-weight: 400;
-    line-height: 40px;
     display: inline-block;
 }
 
@@ -118,7 +175,6 @@ main {
     display: inline-block;
     align-items: center;
     margin-left: 12px;
-    line-height: 40px;
     font-size: 12px;
     font-weight: 700;
     text-align: right;
@@ -126,14 +182,12 @@ main {
 }
 
 .card-text {
-    max-width: 367px;
-    flex-direction: column;
     margin-left: 30px;
 }
 
 
 /* Блок новостей */
-.news {
+.main {
     max-width: 794px;
     margin-left: 15px;
 }
@@ -147,14 +201,17 @@ main {
     text-align: center;
     text-transform: uppercase;
     font-weight: 700;
-    line-height: 29.15px;
+    position: relative;
 }
 
-.new-posts-line {
-    width: 66px;
+.new-posts-title:after {
+    content: "";
+    display: block;
+    width: 25%;
     height: 3px;
     background-color: #e1d9bd;
-    margin: 6px auto 0;
+    top: 100%;
+    margin: auto;
 }
 
 .new-post-card {
@@ -163,6 +220,12 @@ main {
     justify-content: flex-start;
     align-items: flex-start;
     margin-top: 22px;
+}
+
+.new-post-card-text a {
+    font-size: 14px;
+    text-decoration: none;
+    color: black;
 }
 
 .new-posts-info {
@@ -180,16 +243,19 @@ main {
 .new-post-card-title {
     color: #888;
     font-size: 12px;
-    line-height: 16px;
 }
 
 
 /* Блок поиска */
 .search {
-    margin-top: 60px;
     justify-content: flex-start;
     align-items: flex-start;
     display: flex;
+}
+
+.form-s {
+    display: flex;
+    margin-top: 60px;
 }
 
 .search-button {
@@ -204,11 +270,10 @@ main {
 }
 
 .search-input {
-    width: 100%;
     max-width: 272px;
     font-size: 13px;
     padding-left: 18px;
-    width: 100%;
+    padding-right: 70px;
     height: 48px;
     color: #939594;
     background-color: #f4f7f6;
@@ -221,18 +286,21 @@ main {
     margin-top: 62px;
 }
 
-.send-text {
+.send-title {
     text-align: center;
     text-transform: uppercase;
     font-weight: 700;
-    line-height: 29.15px;
+    position: relative;
 }
 
-.send-line {
-    width: 66px;
+.send-title:after {
+    content: "";
+    display: block;
+    width: 25%;
     height: 3px;
     background-color: #e1d9bd;
-    margin: 6px auto 0;
+    margin: auto;
+    top: 100%;
 }
 
 .send-form {
@@ -240,7 +308,8 @@ main {
 }
 
 .send-input {
-    width: 100%;
+    box-sizing: border-box;
+    padding: 0 15px;
     font-size: 13px;
     width: 100%;
     height: 48px;
@@ -277,46 +346,42 @@ main {
     text-align: center;
     text-transform: uppercase;
     font-weight: 700;
-    line-height: 29.15px;
+    position: relative;
 }
 
-.tags-line {
-    width: 66px;
+.tags-text:after {
+    content: "";
+    display: block;
+    width: 25%;
     height: 3px;
-    color: #fff;
-    background-color: #e1d9bf;
-    margin: 6px auto 0;
+    background-color: #e1d9bd;
+    margin: auto;
+    top: 100%;
 }
 
-.tags-select {
+.tags-select ul {
     flex-flow: wrap;
     justify-content: flex-start;
     align-items: flex-start;
     margin-top: 24px;
-    display: block;
-    line-height: 30px;
+    display: flex;
+}
 
+.tags-select li {
+    margin: 0 3px 3px 0;
+    list-style: none;
+
+}
+
+.tags-select li:hover>a {
+    color: #000;
+    transition: 700ms;
 }
 
 .button-tag {
+    display: block;
     text-decoration: none;
-    width: 80px;
-    height: 24px;
-    color: #42393e;
-    text-align: center;
-    text-transform: uppercase;
-    background-color: #fff;
-    border: 3px solid #eee;
-    font-size: 12px;
-    font-weight: 700;
-    padding: 2px 8px 2px 8px;
-}
-
-.button-select {
-    text-decoration: none;
-    width: 80px;
-    height: 24px;
-    color: #0f0d0e;
+    color: #42393ed1;
     text-align: center;
     text-transform: uppercase;
     background-color: #fff;
@@ -337,27 +402,38 @@ main {
     text-align: center;
     text-transform: uppercase;
     font-weight: 700;
-    line-height: 29.15px;
+    position: relative;
 }
 
-.themes-line {
-    width: 66px;
+.themes-text:after {
+    content: "";
+    display: block;
+    width: 25%;
     height: 3px;
-    background-color: #e1d9c0;
-    margin: 6px auto 0;
-    ;
+    background-color: #e1d9bd;
+    margin: auto;
+    top: 100%;
 }
 
 .themes-select {
-    justify-content: flex-start;
     margin-top: 30px;
     display: block;
+}
+
+.themes-select ul {
+    list-style: none;
+}
+
+.themes-select span {
+    color: #b59f5b;
+    padding-left: 5px;
+    font-size: 12px;
+    font-weight: 700;
 }
 
 .themes-select-text {
     border: 1px #000;
     font-weight: 700;
-    line-height: 47px;
 }
 
 .themes-select-number {
@@ -365,14 +441,21 @@ main {
     padding-left: 5px;
     font-size: 12px;
     font-weight: 700;
-    line-height: 36.82px;
 }
 
 .themes-select-card {
-    border-bottom: 1px solid #eee;
-    align-items: flex-start;
-    display: flex;
+    margin: 0;
+
+    display: block;
+    cursor: pointer;
 }
+
+.themes-select-card li {
+    display: flex;
+    padding: 10px 0;
+    border-bottom: 1px solid #eee;
+}
+
 
 
 /* Блок футера */
@@ -382,29 +465,49 @@ footer {
 }
 
 .contact {
-    height: 83px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     max-width: 1170px;
     background-color: #f4f7f6;
-    margin: 0 auto;
+    padding: 5px auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 .contact img {
-    margin-right: 15px;
-    margin-left: 15px;
+    margin: 20px 15px;
     width: 20px;
     height: 20px;
+}
+
+.contact a {
+    text-decoration: none;
+}
+
+.contact li {
+    list-style: none;
+}
+
+.link1 {
+    background-image: url(https://netology-code.github.io/html-2-diploma/sources/images/social/001-dribbble.svg);
+    background-repeat: no-repeat;
+}
+
+.link2 {
+    background-image: url(https://netology-code.github.io/html-2-diploma/sources/images/social/002-pinterest.svg);
+    background-repeat: no-repeat;
+}
+
+.link3 {
+    background-image: url(https://netology-code.github.io/html-2-diploma/sources/images/social/003-tumblr.svg);
+    background-repeat: no-repeat;
 }
 
 .footer-text {
     text-align: center;
     max-width: 1170px;
     margin: 0 auto;
+    padding: 5px 0;
 }
 
 .copyright {
     color: #999;
-    line-height: 40px;
 }

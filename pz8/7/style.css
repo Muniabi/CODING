@@ -1,0 +1,65 @@
+div {
+    color: darkgoldenrod;
+    text-align: center;
+}
+
+.glav {
+    border: 1px solid darkgoldenrod;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.menu {
+    margin: 0;
+    padding: 0px;
+    list-style-type: none;
+    width: 100%;
+    display: flex;
+    gap: 20px;
+    background-color: darkgoldenrod;
+}
+
+.menu__list {
+    background-color: darkgoldenrod;
+    padding: 13px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: white;
+}
+
+.start__menu {
+    margin: 0px;
+    padding: 0px;
+}
+
+h1 {
+    text-align: center;
+}
+
+.menu2 {
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
+    list-style-type: none;
+    width: 100%;
+    display: flex;
+    gap: 20px;
+}
+
+.menu__list2 {
+    color: darkgoldenrod;
+    padding: 13px;
+}
+
+.menu2 a {
+    text-decoration: none;
+    color: darkgoldenrod;
+}
+
+.start__menu2 {
+    position: absolute;
+    left: 40%;
+}

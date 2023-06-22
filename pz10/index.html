@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>№10</title>
+</head>
+
+<body>
+    <form action="">
+        <fieldset>
+            <legend>Контактная информация</legend>
+            <label>
+                <p>Имя</p> <input type="text">
+            </label>
+            <label>
+                <p>Телефон</p> <input type="tel">
+            </label>
+            <label>
+                <p>Email</p> <input type="email">
+            </label>
+            <label>
+                <p>Дата посещения</p> <input type="date">
+            </label>
+        </fieldset>
+
+        <fieldset>
+            <legend>Персональная информация</legend>
+            <label>
+                <p>Возраст</p> <input type="number" min="1" max="100" step="1">
+            </label>
+            <label>
+                <p>Любимая кухня</p> <select>
+                    <option value="Русская">Русская</option>
+                    <option value="Японская">Японская</option>
+                    <option value="Итальянская">Итальянская</option>
+                </select>
+            </label>
+            <label>
+                <p>Какие блюда вы бы хотели увидеть в меню?</p> <textarea></textarea>
+            </label>
+        </fieldset>
+
+        <fieldset>
+            <legend>Оценка нашего заведения</legend>
+            <h4>Почему вы выбрали наше заведение?</h4>
+            <label><input type="radio" name="choice"> Недалеко от дома/работы</label>
+            <label><input type="radio" name="choice"> Увидел рекламу</label>
+            <label><input type="radio" name="choice"> Посоветовали</label>
+            <label><input type="radio" name="choice"> Оптимальное соотношение цены качества</label>
+            <h4>Вы будете рекомендовать наше заведение своим знакомым?</h4>
+            <label><input type="radio" name="choice2"> Да</label>
+            <label><input type="radio" name="choice2"> Нет</label>
+        </fieldset>
+
+        <input type="submit" value="Отправить">
+    </form>
+</body>
+
+</html>

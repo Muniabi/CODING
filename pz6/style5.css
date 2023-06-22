@@ -1,0 +1,129 @@
+#wrapper {
+    position: relative;
+    width: 500px;
+    height: 400px;
+    margin: 0px auto;
+    border: 1px dashed black;
+}
+
+
+#elem1 {
+    background-color: lightgreen;
+    position: absolute;
+    left: 75px;
+    top: 25px;
+    width: 350px;
+    height: 350px;
+    border-radius: 200px;
+}
+
+#elem2 {
+    background-color: white;
+    position: absolute;
+    left: 130px;
+    top: 70px;
+    width: 80px;
+    height: 80px;
+    border-radius: 50px;
+}
+
+#elem3 {
+    background-color: white;
+    position: absolute;
+    right: 130px;
+    top: 70px;
+    width: 80px;
+    height: 80px;
+    border-radius: 50px;
+}
+
+#elem4 {
+    background-color: white;
+    position: absolute;
+    right: 160px;
+    top: 270px;
+    width: 180px;
+    height: 20px;
+}
+
+#elem5 {
+    background-color: white;
+    position: absolute;
+    right: 230px;
+    top: 180px;
+    width: 50px;
+    height: 50px;
+}
+
+#swag {
+    position: relative;
+    width: 500px;
+    height: 400px;
+    margin: 100px auto;
+    border: 1px dashed black;
+}
+
+
+#es1 {
+    background-color: #C4CD14;
+    position: absolute;
+    left: 75px;
+    top: 25px;
+    width: 350px;
+    height: 350px;
+    border-radius: 200px;
+}
+
+#es2 {
+    background-color: white;
+    position: absolute;
+    left: 150px;
+    top: 70px;
+    width: 70px;
+    height: 70px;
+    border-radius: 50px;
+}
+
+#es3 {
+    background-color: white;
+    position: absolute;
+    right: 150px;
+    top: 70px;
+    width: 70px;
+    height: 70px;
+    border-radius: 50px;
+}
+
+
+#es5 {
+    background-color: white;
+    position: absolute;
+    right: 225px;
+    top: 170px;
+    width: 60px;
+    height: 60px;
+    border-radius: 30px;
+    z-index: 2;
+}
+
+#es4 {
+    background-color: #C4CD14;
+    position: absolute;
+    right: 165px;
+    top: 140px;
+    width: 180px;
+    height: 180px;
+    border-radius: 100px;
+    z-index: 1;
+}
+
+#es6 {
+    background-color: white;
+    position: absolute;
+    right: 170px;
+    top: 165px;
+    width: 170px;
+    height: 170px;
+    border-radius: 80px;
+    z-index: 0;
+}

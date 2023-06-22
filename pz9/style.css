@@ -1,0 +1,38 @@
+body {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+label {
+    display: flex;
+    gap: 20px;
+}
+
+input {
+    display: block;
+    width: 200px;
+}
+
+button {
+    display: block;
+    width: 200px;
+}
+
+textarea {
+    display: block;
+    width: 200px;
+}
+
+select {
+    display: block;
+    width: 200px;
+}
+
+fieldset {
+    display: flex;
+}
+
+.resize-none {
+    resize: none;
+}

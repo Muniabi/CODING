@@ -1,0 +1,36 @@
+.menu {
+    margin: 0px;
+    padding: 10px;
+    list-style-type: none;
+    width: 100%;
+    display: flex;
+    gap: 20px;
+    background-color: #1f1f1f;
+}
+
+.menu__list {
+    background-color: #1f1f1f;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+#osnova {
+    border: 1px solid #1f1f1f;
+}
+
+#osnova p {
+    padding: 0px 10px;
+}
+
+.start__menu {
+
+    margin: 0px;
+    padding: 0px;
+}
+
+h1 {
+    text-align: center;
+}

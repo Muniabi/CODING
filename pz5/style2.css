@@ -1,0 +1,23 @@
+table {
+    border: 2px solid #800080;
+    border-collapse: collapse;
+    width: 500px;
+}
+
+th {
+    color: white;
+    background-color: #bfbfbf;
+    border: 2px solid #800080;
+}
+
+td {
+    background-color: #800080;
+    color: white;
+    padding: 15px;
+}
+
+caption {
+    font-size: 20px;
+    color: #800080;
+    font-weight: 900;
+}

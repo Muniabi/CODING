@@ -1,0 +1,17 @@
+h1 {
+    color: #004bff;
+}
+
+div {
+    margin: 8px;
+    padding: 5px 10px;
+    border: 1px solid black;
+}
+
+.podr {
+    text-align: right;
+}
+
+a {
+    text-decoration: none;
+}

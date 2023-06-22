@@ -1,0 +1,26 @@
+div {
+    color: green;
+}
+
+p {
+    text-align: right;
+}
+
+h1,
+h2 {
+    text-align: center;
+}
+
+h2 {
+    text-decoration: underline;
+}
+
+span {
+    text-decoration: underline;
+    font-weight: 900;
+}
+
+div {
+    border: 1px dashed green;
+    border-radius: 20px;
+}

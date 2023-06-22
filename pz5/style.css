@@ -1,0 +1,21 @@
+table {
+    border: 4px outset #bfbfbf;
+    padding: 3px;
+}
+
+th {
+    color: #b01830;
+    background-color: #bfbfbf;
+    padding: 10px;
+    border: 1px inset #bfbfbf;
+}
+
+td {
+    padding: 10px;
+    border: 1px inset #bfbfbf;
+}
+
+caption {
+    color: #b01830;
+    font-weight: 900;
+}

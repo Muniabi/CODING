@@ -1,0 +1,22 @@
+.reed {
+    color: red;
+}
+
+.gren {
+    color: green;
+}
+
+div {
+    border: 1px solid red;
+    border-radius: 20px;
+    padding: 20px;
+}
+
+.avt {
+    text-align: right;
+}
+
+span {
+    color: blue;
+    text-decoration: underline;
+}

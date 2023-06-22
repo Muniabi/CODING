@@ -1,0 +1,23 @@
+h1 {
+    color: #004bff;
+}
+
+p,
+h1 {
+    font-family: 'Times New Roman';
+    font-size: 17px;
+}
+
+.gl {
+    margin: 8px;
+    padding: 5px 10px;
+    border: 1px solid black;
+}
+
+a {
+    text-decoration: none;
+}
+
+.podr {
+    text-align: right;
+}

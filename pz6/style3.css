@@ -1,0 +1,36 @@
+#wrappe {
+    position: relative;
+    width: 540px;
+    height: 400px;
+    margin: 0px auto;
+    border: 1px dashed #000000;
+}
+
+#elem2 {
+    position: absolute;
+    left: 100px;
+    top: 100px;
+    width: 80px;
+    height: 80px;
+    z-index: 2;
+    background-color: white;
+}
+
+#elem3 {
+    position: absolute;
+    right: 100px;
+    bottom: 100px;
+    width: 80px;
+    height: 80px;
+    z-index: 1;
+    background-color: white;
+}
+
+#elem4 {
+    position: absolute;
+    width: 420px;
+    height: 360px;
+    margin: 20px 60px 20px 60px;
+    background-color: #00ffd0;
+    z-index: 0;
+}
