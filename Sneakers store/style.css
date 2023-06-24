@@ -1,0 +1,57 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    border: none;
+
+}
+
+body {
+    background-color: #dbdbdb;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.section {
+    margin: 30px;
+    width: 100%;
+    max-width: 1600px;
+    height: 100vh;
+    border-radius: 30px;
+    background-color: #edf0f3;
+}
+
+.nav {
+    display: block;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    float: left;
+    position: relative;
+    left: 30px;
+}
+
+.menu li {
+    text-align: center;
+    margin: 10px;
+    padding: 5px;
+}
+
+.login {
+    text-align: center;
+    position: relative;
+    display: flex;
+    align-items: center;
+    float: right;
+    right: 30px;
+}
+
+.login button {
+    margin: 10px;
+    padding: 5px;
+}
