@@ -1,12 +1,11 @@
 * {
     margin: 0;
     padding: 0;
-    border: 0;
     box-sizing: border-box;
 }
 
 :root {
-    --size:(1vh + 1vw);
+    --size: (1vh + 1vw);
 }
 
 body {
@@ -16,14 +15,71 @@ body {
     font-family: 'Poppins', sans-serif;
 }
 
-.header {
-    max-height: 344px;
-    padding: calc(var(--size)* 2.5);
+.container {
+    width: 1200px;
+    height: 920px;
+    margin: 0;
+    color: #ffffff;
+    font-family: Poppins, sans-serif;
+    background-color: #492ba7;
+    font-size: 16px;
 }
 
-.nav {
-    display: flex;
-    justify-content: flex-end;
+input {
+    background-color: #492ba7;
+    border: 1px solid white;
+    color: white;
+    width: 100%;
+    height: 40px;
 }
 
-.logo {}
+.form-wrapper {
+    margin-top: 20px;
+    margin: 50px;
+    width: 500px;
+    height: 550px;
+    border: 2px solid white;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display: grid;
+    grid-template-rows: repeat(5, 1fr);
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 20px;
+}
+
+.name {
+    grid-column: 1/-1;
+}
+
+.prefessional {
+    grid-column: 1/-1;
+}
+
+.date {
+    grid-column: 1/2;
+    grid-row: 3;
+}
+
+.center {
+    grid-column: 2/-1;
+    grid-row: 3;
+}
+
+.mail {
+    grid-column: 1/-1;
+}
+
+.information {
+    grid-column: 1/-1;
+    text-align: justify;
+}
+
+.button-send {
+    height: 40px;
+    width: 100%;
+    background-color: #ff6721;
+    color: white;
+    font-size: 20px;
+}
