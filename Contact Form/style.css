@@ -6,7 +6,7 @@
 }
 
 body {
-    background-image: url(backk.png);
+    background-image: url(https://github.com/Muniabi/CODING/blob/master/Contact%20Form/backk.png?raw=true);
     background-size: 100%;
     background-repeat: no-repeat;
     font-family: 'Poppins', sans-serif;
@@ -17,7 +17,6 @@ body {
     max-width: 1200px;
     max-height: 920px;
     color: #ffffff;
-    background-color: #492ba7;
     font-size: 16px;
 }
 
