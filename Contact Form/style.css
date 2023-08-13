@@ -2,10 +2,28 @@
     margin: 0;
     padding: 0;
     border: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --size:(1vh + 1vw);
 }
 
 body {
     background-image: url(backk.png);
     background-size: 100%;
     background-repeat: no-repeat;
+    font-family: 'Poppins', sans-serif;
 }
+
+.header {
+    max-height: 344px;
+    padding: calc(var(--size)* 2.5);
+}
+
+.nav {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.logo {}
