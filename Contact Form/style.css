@@ -5,10 +5,6 @@
     border: none;
 }
 
-:root {
-    --size: (1vh + 1vw);
-}
-
 body {
     background-image: url(backk.png);
     background-size: 100%;
@@ -18,10 +14,8 @@ body {
 }
 
 .container {
-
-    width: 1200px;
-    height: 920px;
-    margin: 0;
+    max-width: 1200px;
+    max-height: 920px;
     color: #ffffff;
     background-color: #492ba7;
     font-size: 16px;
@@ -41,27 +35,23 @@ input {
 }
 
 .form-wrapper {
-    margin-top: 20px;
-    margin: 50px;
+    margin: 50px 50px 50px;
     width: 500px;
     height: 100%;
     border: 2px solid white;
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding: 20px;
     display: grid;
     grid-template-rows: repeat(5, 1fr);
     grid-template-columns: repeat(4, 1fr);
     column-gap: 20px;
 }
 
-.name {
+.name,
+.prefessional,
+.mail,
+.information {
     grid-column: 1/-1;
-}
-
-.prefessional {
-    grid-column: 1/-1;
+    text-align: justify;
 }
 
 .date {
@@ -74,15 +64,6 @@ input {
     grid-row: 3;
 }
 
-.mail {
-    grid-column: 1/-1;
-}
-
-.information {
-    grid-column: 1/-1;
-    text-align: justify;
-}
-
 .button-send {
     margin-top: 10px;
     height: 40px;
@@ -90,4 +71,5 @@ input {
     background-color: #ff6721;
     color: white;
     font-size: 20px;
+    text-align: center;
 }
