@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    border: none;
 }
 
 :root {
@@ -13,16 +14,21 @@ body {
     background-size: 100%;
     background-repeat: no-repeat;
     font-family: 'Poppins', sans-serif;
+    font-weight: 400;
 }
 
 .container {
+
     width: 1200px;
     height: 920px;
     margin: 0;
     color: #ffffff;
-    font-family: Poppins, sans-serif;
     background-color: #492ba7;
     font-size: 16px;
+}
+
+.wrapper {
+    float: right;
 }
 
 input {
@@ -31,13 +37,14 @@ input {
     color: white;
     width: 100%;
     height: 40px;
+    padding: 0 5px 0 5px;
 }
 
 .form-wrapper {
     margin-top: 20px;
     margin: 50px;
     width: 500px;
-    height: 550px;
+    height: 100%;
     border: 2px solid white;
     padding-left: 20px;
     padding-right: 20px;
@@ -77,6 +84,7 @@ input {
 }
 
 .button-send {
+    margin-top: 10px;
     height: 40px;
     width: 100%;
     background-color: #ff6721;
