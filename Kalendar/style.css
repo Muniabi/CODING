@@ -4,7 +4,6 @@
     box-sizing: border-box;
     border: 0;
     font-family: 'Poppins', sans-serif;
-
 }
 
 :root {
@@ -14,7 +13,7 @@
 .head {
     display: flex;
     align-items: center;
-    font-size: calc(var(--sz) * .8);
+    font-size: calc(var(--sz) * 1.2);
     font-weight: bold;
     justify-content: center;
     color: #000;
@@ -28,40 +27,30 @@ ul {
     grid-gap: 1em;
     margin: 0 auto;
     max-width: 64em;
-    padding: 0;
+    padding: 1.25em;
 }
 
-.weekdays li {
+.weekdays {
     background-color: #e0e0e0;
+    text-align: center;
+    font-weight: 600;
+    font-size: 1.2em;
+    padding: 0 15px 0 15px;
+}
+
+.weekdays:nth-child(1) {
+    background-color: #a8a9a8;
 }
 
 li {
-    background-color: #e4e4e4;
+    background-color: #e0e0e0;
     list-style: none;
-    font-size: calc(var(--sz) * .6);
+    font-size: 1.2em;
+    padding-bottom: 2.3em;
+    padding-left: .3em;
+    font-weight: 500;
 }
 
-ul.weekdays li {
-    height: 2vw;
-}
-
-ol.day-grid li {
-    background-color: #eaeaea;
-    border: 1px solid #eaeaea;
-    height: 8vh;
-    max-height: 125px;
-}
-
-ul.weekdays abbr[title] {
-    border: none;
-    font-weight: 700;
-    text-decoration: none;
-}
-
-ol.day-grid li:nth-child(1),
-ol.day-grid li:nth-child(2),
-ol.day-grid li:nth-child(3),
-ol.day-grid li:nth-child(34),
-ol.day-grid li:nth-child(35) {
-    background-color: #fff;
+.month-next {
+    background-color: #f4f4f4;
 }
