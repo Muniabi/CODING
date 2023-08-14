@@ -1,0 +1,67 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: 0;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+:root {
+    --sz: 1vh + 1vw;
+}
+
+.head {
+    display: flex;
+    align-items: center;
+    font-size: calc(var(--sz) * .8);
+    font-weight: bold;
+    justify-content: center;
+    color: #000;
+    text-align: center;
+}
+
+ul {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: repeat(autofill, 1fr);
+    grid-gap: 1em;
+    margin: 0 auto;
+    max-width: 64em;
+    padding: 0;
+}
+
+.weekdays li {
+    background-color: #e0e0e0;
+}
+
+li {
+    background-color: #e4e4e4;
+    list-style: none;
+    font-size: calc(var(--sz) * .6);
+}
+
+ul.weekdays li {
+    height: 2vw;
+}
+
+ol.day-grid li {
+    background-color: #eaeaea;
+    border: 1px solid #eaeaea;
+    height: 8vh;
+    max-height: 125px;
+}
+
+ul.weekdays abbr[title] {
+    border: none;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+ol.day-grid li:nth-child(1),
+ol.day-grid li:nth-child(2),
+ol.day-grid li:nth-child(3),
+ol.day-grid li:nth-child(34),
+ol.day-grid li:nth-child(35) {
+    background-color: #fff;
+}
