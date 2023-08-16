@@ -97,6 +97,7 @@ html {
     background: linear-gradient(45deg, DarkMagenta, Tomato, Violet);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    background-clip: text;
 }
 
 .description p {
