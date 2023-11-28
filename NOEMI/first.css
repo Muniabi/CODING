@@ -76,3 +76,18 @@ span {
 .lil {
     margin: 30px 0 20px 0;
 }
+
+.music-title {
+    font-size: 18px;
+    margin-top: 20px;
+}
+
+.cooking {
+    font-size: 18px;
+    margin: 15px 0;
+    font-weight: normal;
+}
+
+.title-cook {
+    font-size: 22px;
+}
