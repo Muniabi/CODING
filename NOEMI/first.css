@@ -88,6 +88,13 @@ span {
     font-weight: normal;
 }
 
-.title-cook {
+.title-cook,
+.title-interior {
     font-size: 22px;
+}
+
+.interior {
+    margin: 10px 0 20px 0;
+    font-weight: normal;
+    font-size: 18px;
 }
