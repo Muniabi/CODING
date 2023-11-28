@@ -1,0 +1,78 @@
+.info {
+    align-items: center;
+}
+
+.info img {
+    height: 100%;
+    width: clamp(400px, 60vw, 800px);
+    margin-bottom: 50px;
+}
+
+.title {
+    margin-bottom: 40px;
+    font-size: 22px;
+}
+
+.title__text {}
+
+span {
+    font-weight: bold;
+}
+
+.paragraph__text {
+    font-size: 20px;
+    font-family: sans-serif;
+    margin-bottom: 20px;
+    line-height: 28px;
+}
+
+.last-p {
+    margin-top: 25px;
+    font-size: 25px;
+    font-family: sans-serif;
+    text-align: center;
+}
+
+.card {
+    display: block;
+}
+
+.card-text {
+    margin-bottom: 30px;
+    margin-left: 0;
+}
+
+.card img {
+    height: 400px;
+}
+
+.spisok {
+    margin-top: 20px;
+}
+
+.spisok li {
+    font-weight: bold;
+}
+
+.spisok-dop li {
+    font-weight: normal;
+    margin: 10px 15px;
+}
+
+.img {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.img>img {
+    width: clamp(200px, 30vw, 400px);
+}
+
+.img>img:first-child {
+    margin-right: 5px;
+}
+
+.lil {
+    margin: 30px 0 20px 0;
+}
